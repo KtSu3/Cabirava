@@ -48,7 +48,7 @@ header #darkModeToggle {
     cursor: pointer;
 }
 
-#curiosidades, #video, #imagens {
+#video {
     margin: 20px;
     padding: 20px;
     align-items: center;
@@ -63,18 +63,6 @@ h1, h2 {
 ul {
     list-style-type: disc;
     padding-left: 20px;
-}
-
-.image-gallery {
-    display: flex;
-    gap: 20px;
-}
-
-.image-gallery img {
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
 }
 
 footer {
