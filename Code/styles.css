@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -25,21 +24,6 @@ header .logo {
     height: 50px;
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-header nav ul li {
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-}
-
 header #darkModeToggle {
     background-color: #444;
     color: #fff;
@@ -48,62 +32,8 @@ header #darkModeToggle {
     cursor: pointer;
 }
 
-#video {
-    margin: 20px;
-    padding: 20px;
-    align-items: center;
-    background-color: #858585;
-    border-radius: 8px;
-}
-
 h1, h2 {
     margin-bottom: 10px;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
-}
-
-.dark-mode {
-    background-color: #333;
-    color: #fff;
-}
-
-.dark-mode header {
-    background-color: #111;
-}
-
-.dark-mode #curiosidades, .dark-mode #video, .dark-mode #imagens {
-    background-color: #444;
-    color: #858585;
-}
-
-.dark-mode footer {
-    background-color: #111;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        margin-left: 0;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
-
-    .image-gallery {
-        flex-direction: column;
-    }
 }
 
 .curiosidade {
@@ -129,4 +59,54 @@ footer {
     padding-left: 20px;
     font-size: 1.1em;
     line-height: 1.6;
+}
+
+#video {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #858585;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Modo Escuro */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background-color: #111;
+}
+
+.dark-mode .curiosidade, 
+.dark-mode #video {
+    background-color: #444;
+    color: #ddd;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .curiosidade {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .curiosidade p {
+        padding-left: 0;
+        margin-top: 10px;
+    }
 }
