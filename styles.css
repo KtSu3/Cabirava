@@ -51,6 +51,7 @@ header #darkModeToggle {
 #curiosidades, #video, #imagens {
     margin: 20px;
     padding: 20px;
+    align-items: center;
     background-color: #858585;
     border-radius: 8px;
 }
