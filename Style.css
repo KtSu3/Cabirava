@@ -14,8 +14,8 @@ header {
 }
 
 header img.logo {
-    max-width: 80px;  /* Ajusta o tamanho do logo */
-    margin-right: 15px;  /* Dá um espaço entre o logo e o título */
+    max-width: 80px; 
+    margin-right: 15px;  
 }
 
 header h1 {

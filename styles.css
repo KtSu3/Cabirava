@@ -1,0 +1,143 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 50px;
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+header #darkModeToggle {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#curiosidades, #video, #imagens {
+    margin: 20px;
+    padding: 20px;
+    background-color: #858585;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.image-gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode header {
+    background-color: #111;
+}
+
+.dark-mode #curiosidades, .dark-mode #video, .dark-mode #imagens {
+    background-color: #444;
+    color: #858585;
+}
+
+.dark-mode footer {
+    background-color: #111;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+    }
+}
+
+.curiosidade {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+    background-color: #858585;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.curiosidade img {
+    max-width: 125px;
+    max-height: 85px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.curiosidade p {
+    flex: 1;
+    padding-left: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
